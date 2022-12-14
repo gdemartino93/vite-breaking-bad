@@ -10,7 +10,7 @@ export default{
 
 <template>
         
-<div class="col-11 py-5">
+<div class="col-12 py-5">
     <div class="bar"> Found x characters</div>
 </div>
 
