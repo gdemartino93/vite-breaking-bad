@@ -1,8 +1,9 @@
 <script >
+import { store } from '../store.js'
 export default{
   data(){
     return{
-      
+      store
     }
   }
 }
@@ -10,8 +11,8 @@ export default{
 
 <template>
         
-<div class="col-12 py-5">
-    <div class="bar"> Found x characters</div>
+<div class="col-12 py-3">
+    <div class="bar"> Found {{store.risultato.length}} characters</div>
 </div>
 
 </template>

@@ -1,18 +1,15 @@
 <script >
+
 export default{
-  data(){
-    return{
-      
-    }
-  }
+props : ["carta"]
 }
 </script>
 
 <template>
 
-<div class="item">
-    <img src="https://rickandmortyapi.com/api/character/avatar/2.jpeg" alt="">
-
+<div class="item my-2">
+    <img :src="carta.image" alt="">
+    <span>{{carta.name}}</span>
 </div>
 
 
@@ -23,8 +20,7 @@ export default{
 .item{
     width: 200px;
     height: 300px;
-    background: wheat;
-    border: 1px solid black;
+
     img{
         height: 100%;
         width: 100%;

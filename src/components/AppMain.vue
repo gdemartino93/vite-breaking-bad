@@ -3,6 +3,7 @@ import CmdSection from './CmdSection.vue';
 import FoundResult from './FoundResult.vue';
 import Item from './Item.vue';
 import { store } from '../store.js'
+import axios from 'axios'
 export default{
 components : { CmdSection, FoundResult, Item },
 data(){
@@ -27,21 +28,22 @@ mounted(){
 
 <template>
         <CmdSection />
+        
 <div class="container d-flex justify-content-center flex-column">
-
     <FoundResult />
-
-        <Item />
-
-   
 </div>
+<div class="container">
+    <div class="col-12 d-flex flex-wrap gap-3">
+        <Item v-for="(item,index) in store.risultato" :key="index" :carta="item" />
+    </div>
+</div>
+    
 </template>
 
 <style scoped lang="scss">
 @use '../styles/partials/variables' as *;
 .container{
     background: white;
-    min-height: 80vh;
 }
 
 
