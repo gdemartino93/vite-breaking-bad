@@ -1,14 +1,15 @@
 <script >
 import CmdSection from './CmdSection.vue'
+import FoundResult from './FoundResult.vue';
 export default{
-components : { CmdSection }
+components : { CmdSection, FoundResult }
 }
 </script>
 
 <template>
         <CmdSection />
-<div class="container">
-    
+<div class="container d-flex justify-content-center">
+    <FoundResult />
 </div>
 </template>
 
