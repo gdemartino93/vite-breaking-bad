@@ -12,7 +12,7 @@ export default{
  <header>
     <div class="row">
         <div class="col-12">
-            <h1>Breaking Bad Api</h1>
+            <h1>Rick and Morty api</h1>
 
         </div>
     </div>

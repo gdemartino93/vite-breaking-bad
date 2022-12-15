@@ -12,10 +12,10 @@ export default{
         
 <div class="col-lg-2 col-5 my-4 offset-1">
     <select class="form-select " aria-label=".form-select-sm example">
-        <option selected>Select Category</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+        <option selected value="Starter">Select Category</option>
+            <option value="Alive">Alive</option>
+            <option value="Dead">Dead</option>
+            <option value="Unknown">Unknown</option>
     </select>
 </div>
 

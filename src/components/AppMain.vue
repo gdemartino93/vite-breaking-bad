@@ -12,6 +12,9 @@ data(){
     }
 },
 methods:{
+    search(){
+        
+    },
     callApi(){
         axios
         .get(store.api)
