@@ -17,9 +17,17 @@ methods:{
     },
     callApi(){
         let newUrl = store.api;
-        if (store.selected == "Alive"){
-            newUrl += `?name=asd`;
-
+        if ( store.selected == "Starter"){
+            newUrl
+        }
+        else if (store.selected == "Alive"){
+            newUrl += `?status=Alive`;
+        }
+        else if( store.selected == "Dead"){
+            newUrl += `?status=Dead`
+        }
+        else{
+            newUrl += `?status=Unknown`
         }
         axios
         .get(newUrl)
