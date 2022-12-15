@@ -16,8 +16,13 @@ methods:{
         
     },
     callApi(){
+        let newUrl = store.api;
+        if (store.selected == "Alive"){
+            newUrl += `?name=asd`;
+
+        }
         axios
-        .get(store.api)
+        .get(newUrl)
         .then(res => {
             store.risultato = res.data.results
         })
@@ -30,7 +35,7 @@ mounted(){
 </script>
 
 <template>
-        <CmdSection />
+        <CmdSection @ricerca="callApi" />
         
 <div class="container d-flex justify-content-center flex-column">
     <FoundResult />
