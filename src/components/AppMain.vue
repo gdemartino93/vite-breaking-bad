@@ -17,7 +17,7 @@ methods:{
     },
     callApi(){
         let newUrl = store.api;
-        if ( store.selected == "Starter"){
+        if (( store.selected == "Starter") || (store.selected == "")){
             newUrl
         }
         else if (store.selected == "Alive"){
