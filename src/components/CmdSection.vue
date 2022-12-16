@@ -17,7 +17,7 @@ export default{
             <option value="Alive">Alive</option>
             <option value="Dead">Dead</option>
             <option value="Unknown">Unknown</option>
-           
+            
     </select>
 </div>
 

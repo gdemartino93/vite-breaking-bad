@@ -7,7 +7,7 @@ props : ["carta"]
 
 <template>
 
-<div class="item myn-2 d-flex flex-column">
+<div class="item my-2 d-flex flex-column">
     <img :src="carta.image" alt="">
     <span class="fw-bold">Name:</span>
     <span>{{carta.name}}</span>
